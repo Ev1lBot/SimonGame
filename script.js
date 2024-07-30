@@ -5,21 +5,21 @@ const buttonColorArray = ['red', 'blue', 'green', 'yellow'];
 let level = 0;
 let gameStarted = false;
 
-$(document).on('keydown', () => {
+$(document).on('keydown', function(){
     if(!gameStarted) {
         newSequence();
         gameStarted = true;
     }
 });
 
-$(document).on('touchend', () => {
+$(document).on('touchend', function(){
     if(!gameStarted) {
         newSequence();
         gameStarted = true;
     }
 })
 
-$('.btn').on('click', () => {
+$('.btn').on('click', function (){
     if(gameStarted){
         let buttonId = $(this).attr('id');
         userPattern.push(buttonId);
@@ -31,7 +31,7 @@ $('.btn').on('click', () => {
     }
 });
 
-$('.btn').on('touchend', () => {
+$('.btn').on('touchend', function (){
     if(gameStarted){
         let buttonId = $(this).attr('id');
         userPattern.push(buttonId);
@@ -53,7 +53,7 @@ function newSequence(){
     gamePattern.push(randomChosenColor);
 
     for (let i = 0; i < gamePattern.length; i++) {
-        setTimeout( () => {
+        setTimeout(() => {
             $(`#${gamePattern[i]}`).fadeOut(100).fadeIn(100);
             playAudio(`./sounds/${gamePattern[i]}.mp3`, 0.45);
         }, i * 500);
