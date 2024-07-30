@@ -7,7 +7,7 @@ let gameStarted = false;
 
 $(document).on('keydown', function (){
     if(!gameStarted) {
-        newSequence();
+        setTimeout(newSequence, 500);
         gameStarted = true;
     }
 });
