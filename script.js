@@ -5,14 +5,14 @@ const buttonColorArray = ['red', 'blue', 'green', 'yellow'];
 let level = 0;
 let gameStarted = false;
 
-$(document).on('keydown', function(){
+$(document).on('keydown', function (){
     if(!gameStarted) {
         newSequence();
         gameStarted = true;
     }
 });
 
-$(document).on('touchend', function(){
+$(document).on('touchend', function (){
     if(!gameStarted) {
         newSequence();
         gameStarted = true;
