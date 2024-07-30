@@ -54,6 +54,8 @@ body {
 @media (max-width: 560px) {
   .btn {
     margin: 10px;
+    height: 400px;
+    width: 4dvh;
   }
   
   #level-title {

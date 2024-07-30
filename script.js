@@ -12,12 +12,12 @@ $(document).on('keydown', function(){
     }
 });
 
-$(document).on('touchend', function(){
-    if(!gameStarted) {
-        newSequence();
-        gameStarted = true;
-    }
-})
+// $(document).on('touch', function(){
+//     if(!gameStarted) {
+//         newSequence();
+//         gameStarted = true;
+//     }
+// })
 
 $('.btn').on('click', function (){
     if(gameStarted){
