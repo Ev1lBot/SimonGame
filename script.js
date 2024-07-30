@@ -31,6 +31,18 @@ $('.btn').on('click', () => {
     }
 });
 
+$('.btn').on('touchend', () => {
+    if(gameStarted){
+        let buttonId = $(this).attr('id');
+        userPattern.push(buttonId);
+    
+        playAudio(`./sounds/${buttonId}.mp3`, 0.45);
+        animatePress(buttonId);
+        
+        checkAnswer(userPattern.length - 1);
+    }
+});
+
 function newSequence(){
     userPattern = [];
 

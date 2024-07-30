@@ -55,8 +55,8 @@ body {
   .btn {
     margin: 10px;
     display: inline-block;
-    height: 115px;
-    width: 115px;
+    height: 150px;
+    width: 150px;
     border: 10px solid black;
     border-radius: 20%;
   }
@@ -65,6 +65,6 @@ body {
     background-color: grey;
   }
   #level-title {
-    margin-bottom: 25%;
+    margin-bottom: 35%;
   }
 }
