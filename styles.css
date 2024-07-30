@@ -54,14 +54,9 @@ body {
 @media (max-width: 560px) {
   .btn {
     margin: 10px;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    border: 10px solid black;
-    border-radius: 20%;
   }
   
   #level-title {
-    margin-bottom: 35%;
+    margin-bottom: 50%;
   }
 }
