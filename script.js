@@ -12,7 +12,7 @@ $(document).on('keydown', function(){
     }
 });
 
-$(document).on('touch', function(){
+$(document).on('touchend', function(){
     if(!gameStarted) {
         newSequence();
         gameStarted = true;
