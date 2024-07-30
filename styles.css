@@ -51,11 +51,11 @@ body {
   background-color: grey;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .btn {
     margin: 10px;
     height: 400px;
-    width: 4dvh;
+    width: 400px;
   }
   
   #level-title {
