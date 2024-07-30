@@ -12,13 +12,6 @@ $(document).on('keydown', function (){
     }
 });
 
-$(document).on('touchend', function (){
-    if(!gameStarted) {
-        newSequence();
-        gameStarted = true;
-    }
-})
-
 $('.btn').on('click', function (){
     if(gameStarted){
         let buttonId = $(this).attr('id');
@@ -30,18 +23,6 @@ $('.btn').on('click', function (){
         checkAnswer(userPattern.length - 1);
     }
 });
-
-// $('.btn').on('touchend', function (){
-//     if(gameStarted){
-//         let buttonId = $(this).attr('id');
-//         userPattern.push(buttonId);
-    
-//         playAudio(`./sounds/${buttonId}.mp3`, 0.45);
-//         animatePress(buttonId);
-        
-//         checkAnswer(userPattern.length - 1);
-//     }
-// });
 
 function newSequence(){
     userPattern = [];
